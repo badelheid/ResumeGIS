@@ -1,0 +1,162 @@
+<!--!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!>
+!  Program: Main Page for Heidi's Self Promo                                  ¡
+¡  Summary: Resume, webpages and quotes, css picture in the background.       ¡
+!  Method:                                                                    ¡
+¡                                                                             !
+!   Date          Version    Coder       Reason                               ¡
+¡   2021-01-25    1.0       Heidi B.     Intial verion, too much time         !
+!                                        fiddling with header/nav bar         ¡
+!  2021-02-12    1.1        Heidi B.     Adding Notes, flowerbox, form        ¡
+!                                                                             ¡
+<-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-->
+<title>
+Finding Heidi Bramfitt
+</title>
+<!-- Links to css, java and fonts -->
+<link rel="stylesheet" href="Bramfitt.css">
+<link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+<!--<script src="js/header.js"></script>-->
+<script src="js/userprompt.js"></script>
+<script src="js/contactform.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+</style>
+</head>
+
+<body onLoad="userprompt()">
+<!-- Top Bar including navigation-->
+
+<header class="titlehead">
+  <h1>Finding <br> <div id="name">Heidi Bramfitt</div></h1><br>
+</header>
+
+<header id="nav">
+  <!-- button click find my current favourite haunt to be updated in later version-->
+<img class="logo" src="images/pin-8-48.png" alt="gray pin">
+<nav>
+  <ul class="nav__links">
+    <li><a href="Bramfitt.html">Home</a></li>
+    <li><a href="BasicMap.html">Map</a></li>
+    <li><a href="ProjectX.html">ProjectX</a></li>
+  </ul>
+</nav>
+<!-- Contact form php to be added in later versions-->
+
+<button class="open-button" onclick="myButtonForm()">Contact</button>
+
+<div class="form-popup" id="myPopUpForm" method="post">
+  <form action="" class= "formcontainer">
+    <h3> Let me reach out to you! </h3>
+    <label for="name">Preferred way to be addressed?</label><br>
+    <input type="text" id="name" name="name"><br>
+
+    <p>Favourite method of contact?</p><br>
+    <input type="radio" id="telephone" name="mode" value="telephone">
+    <label for="telephone">Call me!</label><br>
+    <input type="radio" id="text" name="mode" value="text">
+    <label for="text">Text me!</label><br>
+    <input type="radio" id="email" name="mode" value="email">
+    <label for="email">E-Mail me!</label><br>
+
+    <input type="text" id="method" name="method"><br>
+
+    <button class="close-button" onclick="RemoveForm()">Submit</button>
+  </form>
+</div>
+</header>
+<header>
+  <h3 id="welcomename"></h3>
+</header>
+
+<div class="content">
+<div class="resume">
+       <div class="portfolio-resume-overview-content">
+         <!-- Left side of resume -->
+         <h3 class="portfolio-resume-name">Ms.Bramfitt's Resume</h3>
+         <p>A more comprehensive version available on <a href="https://my.indeed.com/p/heidib-ke1mzlx" > Indeed</a></p>
+         <img class=boringphoto src='images/boringphoto.jpg' height=256px width=196px>
+       </div>
+       <!-- Right side of resume -->
+     <div class=" columns small-12 medium-7 portfolio-resume-scrolling" >
+       <h3>Technical Skills</h3>
+       <p> Always developing and updating </p>
+       <ul class="portfolio-resume-side-list">
+         <li>QGIS</li>
+         <li>ArcGIS</li>
+         <li>SQL</li>
+         <li>CSS</li>
+         <li>C#</li>
+         <li>HTML</li>
+         <li>Microsoft Office</li>
+       </ul>
+       <h3>Soft Skills</h3>
+       <p>Underrated but key to a well rounded team</p>
+       <ul>
+         <li>Flexibility</li>
+         <li>Creativity</li>
+         <li>Friendly demeanor</li>
+         <li>Willingness to Learn/Be Taught</li>
+         <li>Motivational</li>
+       </ul>
+       <h3>Past Employment</h3>
+       <ul>
+         <li> Royal Canadian Air Force</li>
+         <li> The Vic Cafe</li>
+         <li> Convergys</li>
+         <li> Paws and Claws, PEC </li>
+       </ul>
+     </div>
+   </div>
+
+
+<header><h3> Favourite Webpages </h3></header>
+<!-- Webpage section: image links-->
+<div class="webpages">
+<dl>
+<div class="pro"><dt> Professional </dt>
+<dd><a href="https://stackoverflow.com/questions/136097/difference-between-staticmethod-and-classmethod" a><img src="images/stackoverflow.png"lt="black background with a side view of papers gracefully curving into a holder" height=100px width=100px></a></dd>
+<dd><a href="https://www.visualcapitalist.com/" a><img src="images/venturecapitalist.jpg"lt="green binoculars with a piggybank insight on a black background"height=100px width=100px></a></dd>
+<dd><a href="https://www.qgis.org/en/docs/index.html" ><img src="images/QGISdocs.jpg"alt="green 'Q' with the line similar to a compass"height=100px width=100px></a></dd>
+<dd><a href="https://community.esri.com/" ><img src="images/ESRIcomm.jpg"alt= "blue and green globe with etched black grid lines"height=100px width=100px></a></dd>
+</div>
+<div class="downtime"><dt> Downtime </dt>
+<dd><a href="https://yogawithadriene.com/free-yoga-videos/" ><img src="images/YWAbenji.jpg"alt="cute drawn black dog on a blanket with the words 'HERE FOR BENJI  ywa'"height=100px width=100px></a></dd>
+<dd><a href="https://8tracks.com/s-o-l-a-r-i-s"><img src="images/8tracks.jpg" alt = "white infinity symbol on a 45 degree angle infront of the words tracks"height=100px width=100px></a></dd>
+<dd><a href="https://www.youtube.com/channel/UCJvuab9cGMClCwzAkvx04Hw"><img src="images/YouTube.jpg" alt="red rounded square with white isosceles triangle inside"height=100px width=100px></a></dd>
+</div>
+</dl>
+</div>
+
+<!-- Quotes to get in the last bit of tags -->
+<header><h3> Quotes To Quote </h3></header>
+<div class="quotes">
+<dl>
+<dt><q>I am not lost, for I know where I am. But <i>however</i>, where I am might be lost.</q></dt>
+<dd><sub><a href="https://www.britannica.com/biography/A-A-Milne"> A.A. Milne</a></sub><dd>
+<br>
+<dt><q>Not until we are <b>lost</b> do we begin to understand ourselves.</q></dt>
+<dd><sub><a href="https://plato.stanford.edu/entries/thoreau/"> Henry David Thoreau</a></sub></dd>
+<br>
+<dt><q>A bend in the road is not the end of the road...Unless you fail to make the turn.</q></dt>
+<dd><sub><a href="https://www.biography.com/activist/helen-keller"> Helen Keller</a></sub></dd>
+<br>
+<dt><q>The universe is full of <em>magical</em> things patiently waiting for our wits to grow sharper</q></dt>
+<dd><sub><a href="http://gadetection.pbworks.com/w/page/7931324/Phillpotts%2C%20Eden"> Eden Phillpotts</a></sub></dd>
+<br>
+<dl>
+</div>
+</div>
+<?php
+if(isset($_POST['textdata']))
+{
+  $data=$_POST['testdata'];
+  $fp = fopen('data.txt','a');
+  fwrite($fp,$data);
+  fclose($fp);
+}
+?>
+</body>
+</footer>
+</script>
+</html>
