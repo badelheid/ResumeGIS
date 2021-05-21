@@ -1,0 +1,20 @@
+///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\\///\\\///\\\///\\\///\\\\
+/// 	Program:	user prompt/welcome  javascript																				                                       \\\
+///		Summary:	           \\\
+/// 						                                                																		                         \\\
+/// 	Methods:                                                                                                               \\\
+/// 																								                                                                         \\\
+/// Date          Version        Coder           Reason												                                               \\\
+/// 2021-02-12    1              Heidi           Created Framwork										                                         \\\
+/// 0000-00-00    1.1            Heidi                                                                                       \\\
+///																									                                                                         \\\
+///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\///\\\\///\\\///\\\///\\\///\\\\
+///It will contain one form. That asks for the name of the user. When a button is pushed.
+function myButtonForm() {
+  document.getElementById('myPopUpForm').style.display="block";
+};
+
+function RemoveForm() {
+  document.getElementById('myPopUpForm').style.display="none";
+  document.getElementById('myPopUpForm').style.zindex="-1";
+}
