@@ -1,0 +1,218 @@
+/*   Colours   */
+/*   gray = #939597   */
+/*   yellow =#F9E547    */
+/*   brown = #B9975B   */
+/*   green= #00C7B1   */
+/*   'black'= #1D252D   */
+body{
+	background-color: #939597;
+	font-family: 'Quicksand', sans-serif;
+	color:#1D252D;
+	margin: 0;
+	padding-top: 0;
+}
+
+h1 #name{
+	font: bold 1.8em 'Parisienne', Helvetic;
+	text-shadow: .2em -.1em .04em silver;
+}
+
+li, a, button {
+font-family: "Quicksand", sans-serif;
+font-weight: 400;
+font-size:18px;
+color: #1D252D;
+text-decoration: none;
+}
+
+header {
+  display: flex;
+	background-color:#F9E547;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 3%;
+}
+
+
+.logo{
+	cursor: pointer;
+	border: none;
+}
+#title{
+	font: 1.1em 'Quicksand', Georgia,serif;
+	color: #1D252D;
+	margin-left: auto;
+}
+
+img {
+	float:right;
+	margin: 0 1%;
+	border-radius: 40px/60px;
+	border:double thick white;
+
+}
+
+.nav__links{
+	list-style: none;
+}
+.nav__links li{
+	display: inline-block;
+	padding:0 20px;
+}
+
+.nav__links li a{
+	transition: all 0.3s ease 0s;
+	text-decoration: none;
+	font-size: 1.4em;
+}
+.nav__links li a:hover{
+	color: #00C7B1;
+}
+/* click button for  popup form*/
+#button-open, .RemoveForm{
+	padding: 9px 25px;
+	background-color: rgba(147, 149, 151, 1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition:all 0.3s ease 0s;
+}
+#button-open:hover .RemoveForm:hover{
+	background-color: rgba(147, 149, 151, 0.5);
+}
+/* content */
+
+/* resume portion*/
+.resume {
+  height: 400px;
+  border: 1px solid #cacaca;
+	display:grid;
+	grid-template-columns: auto auto;
+	justify-content: space-evenly;
+}
+.portfolio-resume-name p a{
+	text-decoration: none;
+}
+.portfolio-resume-name p a:hover{
+	color: #00C7B1;
+}
+.portfolio-resume-overview {
+  height: 400px;
+  z-index: 0;
+}
+.portfolio-resume-overview:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+.boringphoto{
+	opacity: .3;
+
+}
+.portfolio-resume-overview-content {
+  max-width: 300px;
+  z-index: 1;
+}
+
+.portfolio-resume-scrolling {
+  padding-top: 1px;
+  padding-bottom: 3px;
+}
+
+@media print, screen and (min-width: 40em) {
+  .portfolio-resume-scrolling {
+    height: 400px;
+		width:auto;
+    overflow-y: auto;
+  }
+}
+.webpages{
+	display:flex;
+}
+
+.webpages dd{
+	float:left;
+	padding-bottom: 15px;
+}
+.webpages dt{
+	color:#F9E547 ;
+	font-size: 1.3em;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	text-shadow: -.1em .1em .02em black;
+}
+sub a{
+	text-decoration: none;
+	font: bold 1.2em 'Parisienne', Helvetic;
+}
+sub a:hover{
+	color: #00C7B1;
+}
+
+/* Map */
+#map_wrapper {
+    height: 600px;
+}
+
+#map_canvas {
+    width: 100%;
+    height: 100%;
+}
+
+/*\/*\/*\/*\/*\/*\ pop up and form /*\/*\/*\/*\/*\/*\
+/* the popup */
+.form-popup {
+	display:none;
+	width: 333px;
+	background-color: white;
+	color: black;
+	text-align: center;
+	border-radius: 2px;
+	border-width: 5px;
+	border-color: #00C7B1;
+	padding:6px 4px;
+	position: absolute ;
+	z-index:2;
+	bottom:50%;
+	left:45%;
+	margin-left:-75px;
+	animation: rolldown 2s;
+	animation-timing-function: ease-in;
+	text-shadow: none;
+	font-size: .9em;
+}
+
+@keyframes rolldown {
+	from {top:-300px;}
+	to {top: 50px;}
+}
+/* Full-width input fields */
+.form input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border-bottom: ; 1px none #00C7B1;
+  background: #f1f1f1;
+  font-family: 'Parisienne', Helvetic;
+}
+imput #name{
+	font-family: 'Parisienne', Helvetic;
+	font-size: .8em;
+}
+/* When the inputs get focus, do something */
+.form input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+/* greetings earthling*/
+.welcomebox{
+
+}
+
+#welcomename{
+
+}
