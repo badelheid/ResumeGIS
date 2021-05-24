@@ -6,7 +6,8 @@
 !   Date          Version    Coder       Reason                               ¡
 ¡   2021-01-25    1.0       Heidi B.     Intial verion, too much time         !
 !                                        fiddling with header/nav bar         ¡
-!  2021-02-12    1.1        Heidi B.     Adding Notes, flowerbox, form        ¡
+!  2021-02-12    1.1        Heidi B.     Adding Notes, flowerbox, form        !
+¡  2021-05-25    1.2        Heidi B.     Updating Form                        !
 !                                                                             ¡
 <-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-¡-!-!-¡-!-->
 <title>
@@ -45,9 +46,9 @@ Finding Heidi Bramfitt
 
 <button class="open-button" onclick="myButtonForm()">Contact</button>
 
-<div class="form-popup" id="myPopUpForm" method="post">
-  <form action="" class= "formcontainer">
-    <h3> Let me reach out to you! </h3>
+<div class="form-popup" id="myPopUpForm" >
+  <h3> Let me reach out to you! </h3>
+  <form method="post" action="contact.php">
     <label for="name">Preferred way to be addressed?</label><br>
     <input type="text" id="name" name="name"><br>
 
@@ -61,7 +62,7 @@ Finding Heidi Bramfitt
 
     <input type="text" id="method" name="method"><br>
 
-    <button class="close-button" onclick="RemoveForm()">Submit</button>
+    <input type='submit' value= "Submit" class="close-button" onclick="RemoveForm()">
   </form>
 </div>
 </header>
